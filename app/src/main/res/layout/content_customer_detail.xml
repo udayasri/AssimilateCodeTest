@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.crowderia.udayasri.androidhivetest.activities.CustomerDetail"
+    tools:showIn="@layout/activity_customer_detail">
+
+    <!-- Customer list thumbnail -->
+    <TextView
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/thumbNail"
+        android:textSize="@dimen/thumbNail" />
+
+    <!--Customer First Name -->
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/fullName"
+        android:textColor="@color/fullName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp" />
+
+    <!--Separator line-->
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginTop="20dip"/>
+
+    <!--Email label-->
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/emailLabel"
+        android:textColor="@color/emailLabel"
+        android:text="Email"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_label"
+        android:layout_marginTop="10dp"
+        android:text="ala@email.com"/>
+
+    <!--Separator line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="20dip"/>
+
+</RelativeLayout>

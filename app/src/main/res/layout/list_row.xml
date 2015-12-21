@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/list_row_selector"
+    android:padding="6dp">
+
+
+    <!-- Customer list thumbnail -->
+    <TextView
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/thumbNail"
+        android:textSize="@dimen/thumbNail" />
+
+    <!--Customer First Name -->
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/fullName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/fullName"/>
+
+    <!-- Rating -->
+    <!--<TextView-->
+        <!--android:id="@+id/rating"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/firstname"-->
+        <!--android:layout_marginTop="1dip"-->
+        <!--android:layout_toRightOf="@+id/thumbnail"-->
+        <!--android:textSize="@dimen/rating"-->
+        <!--android:text="tesfdfsfds"/>-->
+
+    <!--&lt;!&ndash; Genre &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:id="@+id/genre"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/rating"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_toRightOf="@+id/thumbnail"-->
+        <!--android:textColor="@color/genre"-->
+        <!--android:textSize="@dimen/genre" />-->
+
+    <!--&lt;!&ndash; Release Year &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:id="@+id/releaseYear"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:textColor="@color/year"-->
+        <!--android:textSize="@dimen/year" />-->
+
+</RelativeLayout>
