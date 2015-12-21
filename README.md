@@ -1,4 +1,4 @@
-# AssimilateCodeTest
+# Assimilate Code Test
 
 Android Test source code project for Assimilate
 This is a simple test source code of Assimilate Android App.
